@@ -38,3 +38,6 @@ a {
  td{
    padding-left: 15px;
  }
+ .alert-no-description {
+   font-style:italic;
+ }
