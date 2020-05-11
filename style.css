@@ -48,3 +48,7 @@ a {
    margin-top: 6px;
    padding: 21px 60px;
  }
+ .main-container {
+   display:flex;
+   border-bottom: 1px solid darkgray;
+ }
