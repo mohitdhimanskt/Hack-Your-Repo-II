@@ -28,3 +28,13 @@ a {
    margin-left: 15px;
    padding: 9px 3px;
  }
+ table{
+   text-align: left;
+
+ }
+ th {
+   font-weight: bold;
+ }
+ td{
+   padding-left: 15px;
+ }
