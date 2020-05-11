@@ -17,4 +17,8 @@ a {
    padding: 21px 18px;
  }
  
- 
+ header > h1 {
+  color: white;
+  font-size: 1.1rem;
+  display: inline;
+ }
