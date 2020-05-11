@@ -58,7 +58,6 @@ function renderRepoDetails(repo, parent) {
 }
 
 
-
 function selectRepo(select, mainSection, repos) {
   const repo = repos[select.value];
   const detailsSection = createAndAppend(`section`, mainSection, {
@@ -79,14 +78,29 @@ function main(url) {
   const mainSection = createAndAppend(`main`, root, {
     class: `main-container`,
   });
+
   const promise = fetchJSON(url);
-  promise.then(repo =>
+  promise.then(repos =>
     repos
-    .sort((a, b) => a.name.localCompare(b.name))
-    .forEach((repo, index)=>
-    createAndAppend(`option`,select,{
-      text: repo.name,
-      value: index,
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .forEach((repo, index) =>
+        createAndAppend(`option`, select, {
+          text: repo.name,
+          value: index,
+        }),
+      ),
+  );
+  promise.then(repos =>
+    select.addEventListener(`change`, selectRepo(select, mainSection, repos)),
+  );
+  promise.catch(err =>
+    createAndAppend('div', root, {
+      text: err.message,
+      class: 'alert-error',
     }),
-    ),
-    );
+  );
+}
+
+const HYF_REPOS_URL =
+  'https://api.github.com/orgs/mohitdhimanskt/repos?per_page=100';
+window.onload = () => main(HYF_REPOS_URL);
