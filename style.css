@@ -72,5 +72,15 @@ a {
    padding: 21px;
    display: flex; 
   flex-direction: row;
-  align-items: center;
+  align-items: center;  
+  }
+  .contributor > img {
+    height: 60px;
+    border-radius: 6px;
+    order: -1;
+  }
+  .contributor > a {
+    text-decoration: none;
+    padding-left: 21px;
+    flex: 1;
   }
