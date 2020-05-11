@@ -12,3 +12,9 @@ ul {
 a {
   color: royalblue;
 }
+ header{
+   background-image: linear-gradient(to bottom right, darkslateblue, darkcyan);
+   padding: 21px 18px;
+ }
+ 
+ 
