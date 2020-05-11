@@ -56,3 +56,21 @@ a {
    background-color: white;
    background-color: 1px solid darkgray;
  }
+ .details{
+   padding: 21px;
+ }
+ .contributors-container > h3 {
+   color: darkgray;
+   font-size: 0.9rem;
+   padding: 21px;
+   display: block;
+ }
+ .contributor {
+   background-color: white;
+   border-bottom: 1px solid  darkgray;
+   margin: 0;
+   padding: 21px;
+   display: flex; 
+  flex-direction: row;
+  align-items: center;
+  }
