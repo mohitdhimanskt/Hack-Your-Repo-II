@@ -84,3 +84,11 @@ a {
     padding-left: 21px;
     flex: 1;
   }
+  .contributor > span {
+    color: white;
+    background-color: darkgray;
+    padding: 6px 9px;
+    border-radius: 6px;
+    display: block;
+  }
+  
