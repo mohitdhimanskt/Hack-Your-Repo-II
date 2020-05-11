@@ -50,5 +50,9 @@ a {
  }
  .main-container {
    display:flex;
-   border-bottom: 1px solid darkgray;
+   flex-direction: column;
+ }
+ .main-container > * {
+   background-color: white;
+   background-color: 1px solid darkgray;
  }
