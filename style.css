@@ -41,3 +41,10 @@ a {
  .alert-no-description {
    font-style:italic;
  }
+ .alert-error {
+   background-color: mistyrose;
+   text-transform: uppercase;
+   font-style: italic;
+   margin-top: 6px;
+   padding: 21px 60px;
+ }
